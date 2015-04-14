@@ -15,19 +15,19 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i(MYTAG, "onCreate event fired");
+        Log.i(MYTAG, "onCreate event fired" + getIntent());
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.i(MYTAG, "onPause event fired");
+        Log.i(MYTAG, "onPause event fired" + getIntent());
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.i(MYTAG, "onResume event fired");
+        Log.i(MYTAG, "onResume event fired" + getIntent());
     }
 
     @Override
@@ -39,13 +39,13 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i(MYTAG, "onStart event fired");
+        Log.i(MYTAG, "onStart event fired" + getIntent());
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.i(MYTAG, "onRestart event fired");
+        Log.i(MYTAG, "onRestart event fired" + getIntent());
     }
 
     @Override
